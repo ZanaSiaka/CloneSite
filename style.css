@@ -1,0 +1,579 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #0993fe;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: space between;
+    color: aliceblue;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    align-items: center;
+}
+
+nav p{
+    font-weight: 200;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-around;
+}
+
+nav ul li{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .btn-nav{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+nav .btn-nav div{
+    width: 200px;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    align-items: center;
+    height: 50px;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+nav .btn-nav div:hover{
+    background-color: #fff;
+    color: #0993fe;
+}
+
+.sounav{
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sounav h1{
+    text-transform: initial;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.3em;
+}
+
+.sounav h3{
+    margin-top: 70px;
+    font-weight: 300;
+}
+
+.sounav p{
+    border: none;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sounav p a{
+    text-decoration: none;
+    color: aliceblue;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #110b2e44;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.telogo{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telogo img{
+    width: 40px;
+    height: 40px;
+}
+
+.remote{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background-color: #0993fe;
+    border-radius: 100%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.remote img{
+    width: 20px;
+    height: 20px;
+}
+
+main{
+    text-align: center;
+    z-index: -2;
+}
+
+main .section-1{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-1 h1{
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.1em;
+    margin-bottom: 2%;
+}
+
+main .section-1 p{
+    margin-bottom: 1%;
+}
+
+main .section-1 h3{
+    font-weight: 500;
+    margin-bottom: 200px;
+}
+
+main .section-2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+main .section-2 div{
+    margin-left: 40px;
+}
+
+main .section-2 div h1{
+    font-weight: 400;
+}
+
+main .section-2 div p{
+    font-size: 0.9em;
+    font-weight: 300;
+    opacity: 50%;
+}
+
+main .section-3{
+    display: flex;
+    margin-bottom: 150px;
+}
+
+main .section-3 div{
+    width: 33.33%;
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    color: white;
+    z-index: -2;
+}
+
+main .section-3 .one{
+    background-color: #645ee0;
+}
+
+main .section-3 .two{
+    background-color: #317cef;
+}
+
+main .section-3 .three{
+    background-color: #5e99f3;
+}
+
+main .section-3 .one strong{
+    top: 40%;
+    right: 68%;
+}
+
+main .section-3 .two strong{
+    top: 40%;
+    right: 55%;
+}
+
+
+main .section-3 .three strong{
+    top: 40%;
+    right: 55%;
+}
+
+main .section-3 div strong{
+    position: absolute;
+    font-size: 15em;
+    opacity: 10%;
+}
+
+main .section-3 div h2{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+main .section-3 div p{
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+main .section-4{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+main .section-4 h1{
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+main .section-4 p{
+    font-size: 0.9em;
+    opacity: 70%;
+    text-align: center;
+}
+
+main .section-4 .grille{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    margin-top: 40px;
+}
+
+main .section-4 .grille .item{
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+main .section-4 .grille .item h1{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+main .section-4 .grille .item p{
+    text-align: left;
+    font-size: 0.8em;
+}
+
+main .section-5{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+main .section-5 h1{
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+main .section-5 p{
+    opacity: 50%;
+    margin-bottom: 30px;
+}
+
+main .section-5 .flex{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    text-align: start;
+    justify-content: center;
+}
+
+main .section-5 .flex .flexitem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+main .section-5 .flex .flexitem h2{
+    opacity: 90%;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+main .section-5 .flex .flexitem ul{
+    list-style-type: url('Image/coche.png')
+}
+
+main .section-5 .flex .flexitem ul li{
+    font-size: 0.8em;
+    opacity: 70%;
+    margin-bottom: 10px;
+}
+
+main .section-6{
+    background-color: #0993fe;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+}
+
+main .section-6 .nada{
+    width: calc(500px*2);
+}
+
+main .section-6 .caroussel{
+    display: flex;
+    width: 1000px;
+    overflow: hidden;
+}
+
+main .section-6 .slide{
+    width: 1000px;
+    padding: 50px 0;
+    position: relative;
+    animation: caroussel 5s ease-in-out 1s infinite alternate forwards;
+}
+
+main blockquote{
+    width: 1000px;
+    padding: 0 100px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+main .section-6 img{
+    display: block;
+    position: absolute;
+    left: 45%;
+    width: 50px;
+    padding: 0px 0;
+}
+
+main .citation {
+    padding: 100px 0px;
+}
+
+main cite{
+    font-size: 0.8em;
+    padding: 60px 100px;
+
+}
+
+@keyframes caroussel {
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(-1000px);
+    }
+
+    75%{
+        transform: translateX(-1000px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+main .section-6 strong{
+    position: absolute;
+    top: 380px;
+    font-size: 2em;
+    font-weight: 700;
+    color: #ffff00;
+}
+
+main .section-6 .primary .gauche{
+    left: 48%;
+}
+
+main .section-6 .primary .droite{
+    right: 48%;
+    color: white;
+}
+
+main .section-6 .secondary .gauche{
+    left: 48%;
+    color: white;
+}
+
+main .section-6 .secondary .droite{
+    right: 48%;
+}
+
+main .section-7{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(113, 113, 113, 0.1);
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+main .section-7 p{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+main .section-7 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-7 form input[type=text], input[type=email], input[type=tel], textarea{
+    width: 50%;
+    background-color: white;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    max-width: 50%;
+    min-height: 50px;
+    min-width: 50%;
+    max-height: 60px;
+    border: none;
+    /* box-shadow: 3px 3px 8px black; */
+    border-radius: 8px;
+}
+
+main .section-7 .file{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+main .section-7 .file input{
+    appearance: none;
+}
+
+main .section-7 button{
+    color: white;
+    background-color: #0993fe;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-left: 25px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    padding: 4px 4px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
+
+main .section-7 form .checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    width: 50%;
+}
+
+main .section-7 form .checkbox input[type=checkbox] {
+    width: 20px;
+    border: none;
+    height: 20px;
+    outline: none;
+    background-color: none;
+    margin-right: 10px;
+}
+
+main .section-7 form .checkbox label{
+    line-height: 1.8em;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+main .section-7 form .btn{
+    width: 50%;
+    margin-top: 22px;
+}
+
+footer{
+    display: flex;
+    background-color: #0993fe;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    z-index: -2;
+    padding-bottom: 70px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer div img{
+    width: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer span{
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-top: 10px;
+}
