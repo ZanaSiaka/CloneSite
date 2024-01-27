@@ -729,9 +729,7 @@ footer span{
         grid-template-columns: repeat(3, 270px);
     }
 
-    main .section-6 .nada{
-        width: calc(400*2);
-    }
+
 
     main .section-6 .nada .caroussel{
         width: 800px;
@@ -773,8 +771,181 @@ footer span{
     }
 }
 
-@media (max-width: 599px) {
-    nav{
+@media (max-width: 699px) {
+    header{
+        height: 80vh;
+    }
 
-    };
+    nav{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    #logo{
+        text-align: center;
+        font-weight: 400;
+    }
+
+    nav ul{
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+
+    nav ul li a{
+        margin-left: 10px;
+    }
+
+    .wokeu{
+        margin-left: 30px;
+    }
+
+    .bonjour{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .bonsoir{
+        width: auto;
+        margin-left: 0%;
+    }
+    .aurevoir{
+        margin-left: 0;
+    }
+
+    main .section-1{
+        padding: 0 20px 0 20px;
+    }
+
+    main .section-2{
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+
+    main .section-2 div{
+        margin-bottom: 40px;
+    }
+
+    main .section-3{
+        flex-direction: column;
+    }
+
+    main .section-3 div{
+        width: 100%;
+    }
+
+    main .section-3 .two strong{
+        top: 40%;
+        right: 53%;
+    }
+
+    main .section-3 .one strong{
+        top: 40%;
+        right: 64%;
+    }
+
+    main .section-3 .three strong{
+        top: 40%;
+        right: 50%;
+    }
+
+    main .section-4 .grille{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+
+    main .section-5 .flex{
+        display: flex;
+        padding: 0 20px 0 20px;
+        flex-direction: column;
+    }
+
+    main .section-5 .flex h2{
+        margin-top: 40px;
+    }
+
+    main .section-6 .nada .caroussel{
+        width: 500px;
+        text-align: justify;
+    }
+
+    main .section-6 blockquote{
+        width: 500px;
+    }
+
+    main .section-6 .nada .caroussel .slide{
+        width: 500px;
+    }
+
+    @keyframes caroussel {
+        0%{
+            transform: translateX(0);
+        }
+    
+        25%{
+            transform: translateX(0);
+        }
+    
+        50%{
+            transform: translateX(-500px);
+        }
+    
+        75%{
+            transform: translateX(-500px);
+        }
+    
+        100%{
+            transform: translateX(0);
+        }
+
+    }
+
+    main .section-7{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(113, 113, 113, 0.1);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    main .section-7 form input[type=text], input[type=email], input[type=tel], textarea{
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+    }
+    main .section-7 .file{
+        width: 80%;
+    }
+
+    main .section-7 button{
+        font-size: 1em;
+        cursor: pointer;
+        width: 400px;
+        border-radius: 14px;
+    }
+
+    main .section-7 form .checkbox{
+        width: 80%;
+    }
+
+    main .section-7 form .checkbox input[type=checkbox] {
+        width: 20px;
+        border: none;
+        height: 20px;
+        outline: none;
+        background-color: none;
+        margin-right: 10px;
+    }
+
+    main .section-7 form .btn{
+        cursor: pointer;
+        width: 80%;
+    }
 }
